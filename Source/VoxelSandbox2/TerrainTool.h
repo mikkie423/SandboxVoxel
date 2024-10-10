@@ -30,13 +30,15 @@ public:
     void SetShape(ShapeType NewShape);
     void SetSize(float NewSize);
 
+    void GivePlayerItemBasedOnFoliage(const FHitResult& HitResult);
+
 protected:  // Change to protected to allow derived classes access
     virtual void PerformDigAction(const FVector& Location);  // Keep these as protected
     virtual void PerformFillAction(const FVector& Location);  // Keep these as protected
 
     virtual void BeginPlay() override;
 
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tool")
+    UPROPERTY(EditDefaultsOnly, Category = "Tool")
     float DigFillRadius = 50.0f;  // Default dig radius
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tool")

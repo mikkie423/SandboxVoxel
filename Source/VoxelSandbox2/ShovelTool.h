@@ -16,6 +16,6 @@ public:
     UStaticMeshComponent* ShovelMesh;
 
 protected:
-    virtual void PerformDigAction(const FVector& Location) override;
-    virtual void PerformFillAction(const FVector& Location) override;
+    //virtual void PerformDigAction(const FVector& Location) override;
+   // virtual void PerformFillAction(const FVector& Location) override;
 };

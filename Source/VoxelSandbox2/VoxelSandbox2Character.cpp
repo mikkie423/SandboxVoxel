@@ -223,7 +223,7 @@ void AVoxelSandbox2Character::PerformFillAction() {
 // Utility Functions
 
 bool AVoxelSandbox2Character::PerformRayTrace(FHitResult& OutHitResult) {
-	UE_LOG(LogTemp, Error, TEXT("Performing RayTrace"));
+	UE_LOG(LogTemp, Warning, TEXT("Performing RayTrace"));
 
 	FVector CameraLocation;
 	FRotator CameraRotation;
